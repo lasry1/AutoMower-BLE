@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 
 
 class Mower(BLEClient):
-    def __init__(self, channel_id: int, address, pin=None):
+    def __init__(self, channel_id: int, address, pin=1234):
         super().__init__(channel_id, address, pin)
 
     async def command(self, command_name: str, **kwargs):
